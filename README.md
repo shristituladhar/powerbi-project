@@ -19,7 +19,7 @@ Each project uses real or fictional datasets to explore trends, patterns, and bu
 
 ## Projects
 
-### [Data Professional Survey Analysis](./data-survey-analysis)  
+### [1. Data Professional Survey Analysis](./data-survey-analysis)  
 Interactive Power BI dashboard built from survey responses of global data professionals. Includes insights on salary by role, work-life balance, programming language popularity, and difficulty entering the data field.  
 Visualized using KPI cards, gauge charts, tree maps, and donut charts.
 
