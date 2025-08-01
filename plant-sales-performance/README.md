@@ -6,6 +6,12 @@ An interactive Power BI dashboard analyzing plant sales performance from 2022 to
 
 ---
 
+## Dashboard Preview
+
+![Dashboard Preview](dashboard.png)
+
+---
+
 ## Dataset Structure
 
 **Source**: Excel file with the following sheets:
@@ -21,38 +27,38 @@ An interactive Power BI dashboard analyzing plant sales performance from 2022 to
 
 ## Key Metrics & DAX Logic
 
-- **Sales, Quantity, Gross Profit**
+- **Sales**, **Quantity**, **Gross Profit**
 - **YTD** & **PYTD** for all metrics (via `TOTALYTD` + `SAMEPERIODLASTYEAR`)
-- **Dynamic measures** using `SWITCH` based on user-selected metric
-- **GP%** calculated using `DIVIDE([Gross Profit], [Sales])`
-- **Inpast flag** (`TRUE/FALSE`) in `Dim_Date` for controlling PYTD boundaries
+- **Dynamic Measures** using `SWITCH` based on selected metric
+- **Gross Profit % (GP%)** calculated via `DIVIDE([Gross Profit], [Sales])`
+- **InPast flag** (TRUE/FALSE) in `Dim_Date` to define boundaries for PYTD
 
 ---
 
 ## Dashboard Features
 
-| Element                                | Description |
-|----------------------------------------|-------------|
-| KPI Cards                           | YTD, PYTD, YTD vs PYTD, GP% - all dynamic |
-| Treemap                             | Bottom 10 countries by YTD vs PYTD drop |
-| Waterfall Chart                     | YTD vs PYTD breakdown by month |
-| Combo Bar + Line                    | Monthly comparison of YTD and PYTD |
-| Scatter Plot                        | Account-level segmentation by GP% and Quantity |
-| Date Slicer                         | Year filtered to **2023 & 2024** |
-| Metric Selector (Slicer)            | Switches entire report between Sales, Quantity, Gross Profit |
-| Dynamic Visual Titles               | Powered by slicer with `SELECTEDVALUE` |
-| Conditional Formatting              | Applied to highlight negative growth |
-| Drilldown Enabled                   | For exploring trends by month, product, or country |
+| Element                        | Description |
+|--------------------------------|-------------|
+| KPI Cards                      | YTD, PYTD, YTD vs PYTD, GP% (all dynamic) |
+| Treemap                        | Bottom 10 countries by YTD vs PYTD drop |
+| Waterfall Chart                | YTD vs PYTD breakdown by month |
+| Combo Bar + Line Chart         | Monthly YTD vs PYTD comparison |
+| Scatter Plot                   | Customer segmentation by GP% and Quantity |
+| Year Slicer                    | Filters data to 2023 & 2024 |
+| Metric Selector (Slicer)       | Switch between Sales, Quantity, Gross Profit |
+| Dynamic Visual Titles          | Controlled using `SELECTEDVALUE` |
+| Conditional Formatting         | Highlights negative trends |
+| Drilldown Enabled              | By product, country, and time hierarchy |
 
 ---
 
 ## Data Modeling Approach
 
-- **Star schema**: Fact table joined cleanly to `Dim_Product`, `Dim_Account`, and `Dim_Date`
-- **One-to-many relationships** with surrogate keys
-- **Disconnected tables** for slicers and dynamic visuals
-- **Display folders** for measure organization (`YTD`, `PYTD`, `SWITCH`, `Base Measures`, etc.)
-- **Columns and helper measures hidden** to maintain a clean report view
+- **Star Schema**: Fact table linked to `Dim_Product`, `Dim_Account`, `Dim_Date`
+- **One-to-Many Relationships** with surrogate keys
+- **Disconnected Tables**: Used for metric slicer logic
+- **Display Folders**: Organized measures (`YTD`, `PYTD`, `SWITCH`, etc.)
+- **Hidden Columns/Helpers**: Clean model view for users
 
 ---
 
@@ -61,15 +67,35 @@ An interactive Power BI dashboard analyzing plant sales performance from 2022 to
 - Power BI Desktop
 - Power Query Editor
 - DAX (`CALCULATE`, `SWITCH`, `TOTALYTD`, `SAMEPERIODLASTYEAR`, `DIVIDE`, `SELECTEDVALUE`)
-- Conditional formatting & dynamic field-driven titles
+- Conditional formatting and dynamic titles
 
 ---
 
 ## Insights Unlocked
 
 - Drop in Quantity performance in March–April 2024 vs PYTD
-- Major YTD underperformance by countries like Canada & USA
-- Profitability cluster analysis by account (high GP% vs high volume)
-- Dynamic, user-driven exploration of performance metrics
+- Underperformance by countries like Canada and USA in 2024
+- Profitability cluster analysis reveals high GP% vs high-volume accounts
+- Report built for **flexible, user-driven metric switching and drilldown**
 
 ---
+
+## Files Included
+
+- `performance-report.pbix` - Fully interactive Power BI file
+- `plant sales dataset.xls` - Source data (cleaned)
+- `dashboard.png` - Static preview of final dashboard
+
+---
+
+## How to View
+
+1. Download this folder  
+2. Open `performance-report.pbix` in Power BI Desktop  
+3. Interact with visuals, slicers, and insights  
+
+---
+
+## Project Purpose
+
+This project demonstrates dynamic performance reporting using Power BI. It focuses on YOY analysis, profitability, and segmentation – essential for understanding sales trends across multiple dimensions.
