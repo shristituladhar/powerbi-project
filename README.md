@@ -20,8 +20,16 @@ Each project uses real or fictional datasets to explore trends, patterns, and bu
 ## Projects
 
 ### [1. Data Professional Survey Analysis](./data-survey-analysis)  
-Interactive Power BI dashboard built from survey responses of global data professionals. Includes insights on salary by role, work-life balance, programming language popularity, and difficulty entering the data field.  
-Visualized using KPI cards, gauge charts, tree maps, and donut charts.
+Interactive Power BI dashboard built from survey responses of global data professionals.  
+Includes insights on salary by role, work-life balance, programming language popularity, and difficulty entering the data field.  
+Visualized using KPI cards, gauge charts, bar charts, tree maps, and donut charts.
+
+---
+
+### [2. Plant Co. Sales Performance Dashboard](./plant-sales-performance)  
+Interactive dashboard analyzing plant sales performance from 2022 to 2024.  
+Features year-over-year trends, gross profit analysis, and customer/product segmentation across countries and accounts.  
+Visualized using KPI cards, waterfall, treemap, scatter plot, combo chart, and dynamic metric slicers.
 
 ---
 
@@ -29,10 +37,4 @@ Visualized using KPI cards, gauge charts, tree maps, and donut charts.
 
 1. Download or clone this repository  
 2. Open any `.pbix` file using Power BI Desktop  
-3. Interact with visuals, slicers, and explore the dataset  
-
----
-
-## Note
-
-This is an evolving repo — more Power BI projects coming soon!
+3. Interact with visuals, slicers, and explore the datasets  
