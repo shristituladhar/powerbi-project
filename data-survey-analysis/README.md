@@ -1,7 +1,6 @@
 # Data Professional Survey Analysis (Power BI)
 
-This Power BI dashboard analyzes survey data from data professionals around the world.
-It explores patterns in job titles, salary trends, work/life balance, tool preferences, and perceived difficulty in breaking into the data industry.
+This Power BI dashboard analyzes survey data from data professionals worldwide. It explores patterns in job titles, salary trends, work/life balance, tool preferences, and perceived difficulty in breaking into the data industry.
 
 ---
 
@@ -11,40 +10,62 @@ It explores patterns in job titles, salary trends, work/life balance, tool prefe
 
 ---
 
-## Key Insights
+## Dataset Structure
 
-- **Job Title & Salary**: Data Engineers report the highest average salaries; Students and Junior roles trail behind.
-- **Happiness Index**: Participants rated their work/life balance higher than their salary satisfaction.
-- **Top Programming Language**: Python dominates as the most favored language among all job roles.
-- **Difficulty to Break Into Data**: A significant portion of participants found the field challenging to enter.
-- **Demographics**: Majority of responses came from the United States and other English-speaking countries.
+**Source**: Cleaned Excel file  
+- Responses from data professionals, including job titles, salary satisfaction, work hours, country, and preferred programming tools.
 
 ---
 
-## Files Included
+## Key Insights
 
-- `data survey dashboard.pbix` - Fully interactive Power BI dashboard file  
-- `data survey dataset.xlsx` - Cleaned Excel file used as data source  
-- `dashboard-preview.png` - Static preview of final dashboard  
+- **Job Title & Salary**: Data Engineers report the highest average salaries; Students and Junior roles trail behind.
+- **Work-Life Balance vs Salary**: Participants rated their work/life balance higher than their salary satisfaction.
+- **Top Programming Language**: Python dominates across all job roles.
+- **Difficulty Entering Data**: A significant portion found the field hard to break into.
+- **Demographics**: Most responses came from the United States and other English-speaking countries.
+
+---
+
+## Dashboard Features
+
+| Element                      | Description |
+|-----------------------------|-------------|
+| KPI Cards                   | Count of participants, average age |
+| Gauge Charts                | "Happiness" meters for work/life balance and salary |
+| Bar Charts                  | Average salary by job title |
+| Tree Map                    | Country distribution of participants |
+| Donut Chart                 | Difficulty in entering data |
+| Stacked Bar Chart           | Favorite programming languages by frequency |
+| Slicers                     | Allow filtering by country, language, and job title |
 
 ---
 
 ## Tools Used
 
-- **Power BI Desktop (.pbix)**  
+- Power BI Desktop
+- Excel (data cleanup)
+- DAX expressions
+- Slicers, filters, KPI visuals
+
+---
+
+## Files Included
+
+- `data survey dashboard.pbix` - Fully interactive Power BI file
+- `data survey dataset.xlsx` - Cleaned dataset used as source
+- `dashboard-preview.png` - Static image of final dashboard
 
 ---
 
 ## How to View
 
-1. Download the `.pbix` file  
-2. Open it in Power BI Desktop
-3. Interact with filters, slicers, and charts for insights
+1. Download this folder  
+2. Open `data survey dashboard.pbix` using Power BI Desktop  
+3. Interact with visuals and slicers for deeper insights  
 
 ---
 
 ## Project Purpose
 
-This self-driven project was built to practice Power BI dashboard creation and survey data analysis.
-It simulates real-world reporting on team and business-level metrics within the data industry.
-
+This self-driven project was built to practice Power BI dashboard creation and survey data analysis. It simulates real-world reporting on team and business-level metrics within the data industry.
