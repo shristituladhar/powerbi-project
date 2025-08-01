@@ -26,7 +26,7 @@ Visualized using KPI cards, gauge charts, bar charts, tree maps, and donut chart
 
 ---
 
-### [2. Plant Co. Sales Performance Dashboard](./plant-sales-performance)  
+### [2. Plant Co. Sales Performance](./plant-sales-performance)  
 Interactive dashboard analyzing plant sales performance from 2022 to 2024.  
 Features year-over-year trends, gross profit analysis, and customer/product segmentation across countries and accounts.  
 Visualized using KPI cards, waterfall, treemap, scatter plot, combo chart, and dynamic metric slicers.
