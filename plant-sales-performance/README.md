@@ -1,4 +1,4 @@
-# Plant Co. Power BI Sales Performance Dashboard
+# Plant Co. Power BI Sales Performance
 
 An interactive Power BI dashboard analyzing plant sales performance from 2022 to 2024, focusing on year-over-year trends, profitability, and segmentation across accounts, countries, and product types.
 
